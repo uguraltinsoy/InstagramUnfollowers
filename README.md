@@ -17,7 +17,7 @@ password = "password" # Account Password
 python main.py
 ```
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/l_-h-Z8y9SY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![](http://img.youtube.com/vi/l_-h-Z8y9SY/0.jpg)](http://www.youtube.com/watch?v=l_-h-Z8y9SY "")
 
 ### Developer By
 ##### Uğur Altınsoy
