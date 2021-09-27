@@ -1,4 +1,5 @@
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 import Account as account
 
@@ -9,7 +10,7 @@ class Browser:
 
 	def __init__(self,link):
 		self.link = link
-		self.browser = webdriver.Chrome()
+		self.browser = webdriver.Chrome(ChromeDriverManager().install())
 		Browser.goInstagram(self)
 
 	def goInstagram(self):
@@ -17,9 +18,9 @@ class Browser:
 		time.sleep(2)
 		Browser.login(self)
 		Browser.getFollowers(self)
-		self.browser.find_element_by_xpath("/html/body/div[5]/div/div/div[1]/div/div[2]/button").click()
+		self.browser.find_element_by_xpath("/html/body/div[6]/div/div/div[1]/div/div[2]/button").click()
 		Browser.getFollow(self)
-		self.browser.find_element_by_xpath("/html/body/div[5]/div/div/div[1]/div/div[2]/button").click()
+		self.browser.find_element_by_xpath("/html/body/div[6]/div/div/div[1]/div/div[2]/button").click()
 		Browser.getUnfollowing(self)
 
 	def getUnfollowing(self):
